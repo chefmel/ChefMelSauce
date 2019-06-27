@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ChefMelSauces</title>
+    <title>@ViewData["Title"] - ChefMel Sauces</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -19,20 +19,17 @@
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-brand">ChefMelSauces</a>
+            <div class="navbar-header" style="float:left">
+                <a asp-page="/Index" class="navbar-brand">ChefMel Sauces</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
+                    <li><a asp-page="/About">Our Story</a></li>
                     <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="/Available">Available</a></li>
+                    <li><a asp-page="/Purchase">Purchase</a></li>
+                    <li><a asp-page="/Recipes">Recipes</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +41,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - ChefMelSauces</p>
+            <p>&copy; 2019 - ChefMel Sauces</p>
         </footer>
     </div>
 
