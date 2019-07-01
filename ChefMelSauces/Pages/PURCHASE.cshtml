@@ -1,0 +1,90 @@
+﻿@page
+@model ChefMelSauces.Pages.PURCHASEModel
+
+@{
+    ViewData["Title"] = "PURCHASE";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h2>PURCHASE</h2>
+
+<h4>ECommerce</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ECommerce.Sales" class="control-label"></label>
+                <input asp-for="ECommerce.Sales" class="form-control" />
+                <span asp-validation-for="ECommerce.Sales" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.FirstName" class="control-label"></label>
+                <input asp-for="ECommerce.FirstName" class="form-control" />
+                <span asp-validation-for="ECommerce.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.LastName" class="control-label"></label>
+                <input asp-for="ECommerce.LastName" class="form-control" />
+                <span asp-validation-for="ECommerce.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.StreetAddress" class="control-label"></label>
+                <input asp-for="ECommerce.StreetAddress" class="form-control" />
+                <span asp-validation-for="ECommerce.StreetAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.City" class="control-label"></label>
+                <input asp-for="ECommerce.City" class="form-control" />
+                <span asp-validation-for="ECommerce.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.State" class="control-label"></label>
+                <input asp-for="ECommerce.State" class="form-control" />
+                <span asp-validation-for="ECommerce.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.ZipCode" class="control-label"></label>
+                <input asp-for="ECommerce.ZipCode" class="form-control" />
+                <span asp-validation-for="ECommerce.ZipCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.PhoneNumber" class="control-label"></label>
+                <input asp-for="ECommerce.PhoneNumber" class="form-control" />
+                <span asp-validation-for="ECommerce.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.EmailAddress" class="control-label"></label>
+                <input asp-for="ECommerce.EmailAddress" class="form-control" />
+                <span asp-validation-for="ECommerce.EmailAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.CreditCardNumber" class="control-label"></label>
+                <input asp-for="ECommerce.CreditCardNumber" class="form-control" />
+                <span asp-validation-for="ECommerce.CreditCardNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.ExpDate" class="control-label"></label>
+                <input asp-for="ECommerce.ExpDate" class="form-control" />
+                <span asp-validation-for="ECommerce.ExpDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ECommerce.CvvCode" class="control-label"></label>
+                <input asp-for="ECommerce.CvvCode" class="form-control" />
+                <span asp-validation-for="ECommerce.CvvCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
